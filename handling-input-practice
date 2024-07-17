@@ -1,0 +1,10 @@
+#Handling bad input from users.
+
+while True:
+    try:
+        x = int(input("what is x" ))
+        break
+    except ValueError:
+        print('That is not an integer')
+        
+print(f'x is {x}')
