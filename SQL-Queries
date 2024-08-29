@@ -54,8 +54,13 @@ ON r.episodeid = e.id
 WHERE r.episodeid < 5 and r.result like 'eliminated'
 
 
---6.Return the first name and showstopper makes of each star baker for all episodes. 
+--6.Return the first name and showstopper makes of each star baker for all episodes.  
 SELECT 
-	baker, 
-	make
-FROM showstoppers
+	ss.baker, 
+	ss.make,
+	ss.episodeid
+FROM showstoppers ss
+INNER JOIN results r
+ON ss.episodeid = r.episodeid
+AND ss.baker = r.baker
+WHERE r.result like 'star baker'
