@@ -13,5 +13,5 @@ As I reviewed some Python basics, my professor provided some practice problems t
 Following along in class with my professor as he covered some basics. A takeaway from today was the idea that projects (especially large-scale ones) should be split into different files. 
 
 
-##[SQL-Queries](SQL-Queries)
+## [SQL-Queries](SQL-Queries)
 Some practice problems to get back into the flow of SQL queries. This practice was a good refresher on multiple table joins and subqueries.
